@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (square.classList.contains("square")) {
             // square.style.backgroundColor = "black";
             square.style.backgroundColor = getRandomColor();
-
         }
     });
 });
