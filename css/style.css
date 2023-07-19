@@ -1,16 +1,26 @@
-:root {
-    --grid-size: 16;
-    --square-size: 30px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
 }
 
 #container {
-    display: grid;
-    grid-template-columns: repeat(var(--grid-size), var(--square-size));
-    grid-template-rows: repeat(var(--grid-size), var(--square-size));
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;
+    box-sizing: border-box;
+    margin-top: 1rem;
 }
-  
+
 .square {
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    /* Initial Default size (960px / 16), but Javascript already calculates size of squares based on grid size
+    width: 60px; 
+    height: 60px;
+    */
 }
