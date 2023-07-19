@@ -1,18 +1,22 @@
 const container = document.getElementById("container");
-const squares = container.getElementsByClassName("square");
 
-for (let i = 0; i < 16 * 16; i++) {
-  const square = document.createElement("div");
-  square.classList.add("square");
-  container.appendChild(square);
-}
+// Default grid size
+let gridSize = 16;
 
-for (let i = 0; i < squares.length; i++) {
-  squares[i].addEventListener("mouseenter", function () {
-    this.style.backgroundColor = "black";
+function createGrid() {
+    for (let i = 0; i < gridSize * gridSize; i++) {
+      const square = document.createElement("div");
+      square.classList.add("square");
+      container.appendChild(square);
+    }
+  }
+
+createGrid(); // Call the function to create the initial grid
+
+// Add hover effect to the grid squares
+const squares = document.querySelectorAll(".square");
+squares.forEach(square => {
+  square.addEventListener("mouseover", () => {
+    square.style.backgroundColor = "black"
   });
-
-  squares[i].addEventListener("mouseleave", function () {
-    this.style.backgroundColor = "";
-  });
-}
+});
