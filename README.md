@@ -2,20 +2,15 @@
 
 A simple Etch-a-Sketch application built using HTML, CSS, and JavaScript. This project allows you to draw colorful patterns on a grid by hovering over the squares.
 
-## Table of Contents
-
-- [Demo](#demo)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Customizing Grid Size](#customizing-grid-size)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Demo
 
 You can view a live demo of the project [here](https://anthonynguyent.github.io/etch-a-sketch/).
+
+## Technologies Used
+- HTML5
+- CSS3
+- Javascript (ES6)
+- Visual Studio Code
 
 ## Features
 
@@ -48,17 +43,6 @@ Please note that the value entered should be an integer between 1 and 100.
 *Happy Face on Default Sized Grid (16x16)*
 ![Self Portrait](screenshots/selfportrait.png)
 *Self Portrait on a Size Customized 90x90 Grid*
-
-
-## Contributing
-
-Contributions are welcome! If you find any issues or want to enhance the application, feel free to create a pull request.
-
-1. Fork the project (<https://github.com/your-username/etch-a-sketch/fork>)
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a pull request
 
 ## License
 
